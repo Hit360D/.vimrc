@@ -1,36 +1,38 @@
-
-
-
-" turn on syntax highlighting
-syntax on
-
-" show line numbers
-set number
-
-" speed up scrolling
-set ttyfast
-
-" status bar
-set laststatus=2
-
-" highlight matching search patterns
-set hlsearch
-
-" enable incremental search
-set incsearch
-
-" include matching uppercase words with lowercase search term
-set ignorecase
-
-" tabspaces
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
-
-inoremap {<cr> {<cr>}<c-o><s-o>
-inoremap [<cr> [<cr>]<c-o><s-o>
-inoremap (<cr> (<cr>)<c-o><s-o>
-
-
-
+  1 set nocompatible              " be iMproved, required
+  2 filetype off                  " required
+  3 
+  4 " set the runtime path to include Vundle and initialize
+  5 set rtp+=~/.vim/bundle/Vundle.vim
+  6 call vundle#begin()
+  7 " alternatively, pass a path where Vundle should install plugins
+  8 "call vundle#begin('~/some/path/here')
+  9 
+ 10 " let Vundle manage Vundle, required
+ 11 Plugin 'VundleVim/Vundle.vim'
+ 12 
+ 13 
+ 14 
+ 15 " All of your Plugins must be added before the following line
+ 16 call vundle#end()            " required
+ 17 filetype plugin indent on    " required
+ 18 
+ 19 
+ 20 set number
+ 21 
+ 22 set smartindent
+ 23 set tabstop=4
+ 24 set shiftwidth=4
+ 25 set expandtab
+ 26 set ttyfast
+ 27 set hlsearch
+ 28 set incsearch
+ 29 set ignorecase
+ 30 syntax on
+ 31 
+ 32 inoremap {<cr> {<cr>}<c-o><s-o>
+ 33 inoremap [<cr> [<cr>]<c-o><s-o>
+ 34 inoremap (<cr> (<cr>)<c-o><s-o>
+~                                                                                                                     
+~                                                                                                                     
+~                                                                                                                     
+~                                    
